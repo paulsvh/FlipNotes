@@ -4,6 +4,6 @@ class User < ApplicationRecord
     has_many :cards, through: :decks
 
     validates :username, uniqueness: true, presence: true
-    validates :email uniqueness: true, presence: true
+    validates :email, uniqueness: true, presence: true
 
 end
